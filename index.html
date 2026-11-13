@@ -2,6 +2,34 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#170e2b"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E"><title>Temple of the Violet Veil</title>
 <style>
 :root{color-scheme:dark;--ink:#f7ecff;--muted:#b7a3d1;--plum:#170e2b;--panel:#24163d;--line:#533875;--violet:#9a62ec;--pink:#ff72d2;--gold:#ffdf91}*{box-sizing:border-box}html{min-height:100%;background:var(--plum)}body{margin:0;min-height:100vh;color:var(--ink);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:radial-gradient(ellipse at 42% 18%,#462466 0,#24163d 35%,#170e2b 75%);image-rendering:pixelated}button{font:inherit;color:inherit}.app{max-width:1440px;margin:auto;padding:18px clamp(12px,2.4vw,32px) 28px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:16px}.brand{display:flex;align-items:center;gap:12px}.brand-icon{width:44px;height:44px;display:grid;place-items:center;background:#392254;border:3px solid #8658b8;box-shadow:4px 4px #10091b;font-size:25px}.brand h1{font-size:clamp(17px,2.4vw,26px);letter-spacing:.07em;margin:0;text-transform:uppercase}.brand p{margin:4px 0 0;color:var(--muted);font-size:11px;letter-spacing:.12em}.top-actions{display:flex;gap:8px}.tiny-btn{background:#291a41;border:2px solid #634387;padding:9px 12px;cursor:pointer;box-shadow:3px 3px #10091b}.tiny-btn:hover{background:#40245b}.stats{display:grid;grid-template-columns:1.35fr 1fr 1fr 1.12fr;gap:10px;margin-bottom:14px}.stat{min-width:0;background:linear-gradient(180deg,#30204c,#241735);border:2px solid var(--line);padding:11px 14px;box-shadow:4px 4px #10091b}.stat-label{display:block;color:#c5abd9;font-size:10px;letter-spacing:.13em;text-transform:uppercase;margin-bottom:6px}.stat-value{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:clamp(17px,2.1vw,25px);font-weight:900;color:#fff4ff}.stat:first-child .stat-value{color:#f4cfff}.stat-sub{display:block;color:#b29acb;font-size:10px;margin-top:3px}.game-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(330px,.8fr);gap:14px;align-items:stretch}.scene-panel,.shop-panel{background:rgba(31,19,49,.92);border:2px solid #50356d;box-shadow:5px 5px #10091b;min-width:0}.scene-panel{position:relative;display:flex;flex-direction:column;overflow:hidden;min-height:610px}.scene-head{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:14px 16px 0}.eyebrow{font-size:10px;color:#c5a6e2;letter-spacing:.16em;text-transform:uppercase}.build-count{color:#f2ca8e;font-size:11px}.sky{position:absolute;inset:52px 0 70px;background:radial-gradient(ellipse at 51% 58%,#b064ff33,transparent 48%),linear-gradient(180deg,#211333,#281743 65%,#211333)}.stars{position:absolute;inset:0;opacity:.65;background-image:radial-gradient(#ffe8ff 1px,transparent 1.5px),radial-gradient(#bd8aff 1px,transparent 1.5px);background-size:61px 53px,89px 77px;background-position:13px 10px,27px 22px}.moon{position:absolute;top:8%;right:19%;height:42px;width:42px;background:#d6a8ff;box-shadow:8px 0 #281743,0 0 22px #bc7dff;opacity:.8}.scene-click{position:relative;z-index:1;display:grid;place-items:center;flex:1;min-height:0;padding:4px 5px 0;border:0;background:transparent;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}.scene-click:focus-visible{outline:3px dashed var(--pink);outline-offset:-8px}.temple-svg{width:min(100%,720px);height:auto;max-height:490px;overflow:visible;image-rendering:pixelated;filter:drop-shadow(0 11px #05020c3d);transition:transform .08s}.scene-click:active .temple-svg{transform:translateY(4px) scale(.99)}.floor-glow{position:absolute;bottom:15%;left:18%;right:18%;height:34px;background:#a640f1;filter:blur(20px);opacity:.28;pointer-events:none}.click-hint{position:absolute;z-index:3;bottom:19px;left:50%;transform:translateX(-50%);white-space:nowrap;color:#e3c9f8;font-size:11px;letter-spacing:.08em;text-shadow:2px 2px #1a0c29}.float-text{position:absolute;z-index:5;pointer-events:none;font-weight:bold;color:#ffddff;text-shadow:2px 2px #6f31a9;animation:floatup .8s ease-out forwards}@keyframes floatup{to{transform:translateY(-42px);opacity:0}}.shop-panel{display:flex;flex-direction:column;max-height:720px}.shop-head{padding:14px 15px 10px;border-bottom:2px solid #49315f;background:#291a40}.shop-title{display:flex;justify-content:space-between;align-items:baseline}.shop-title h2{font-size:15px;letter-spacing:.13em;text-transform:uppercase;margin:0}.shop-title span{font-size:10px;color:#bca2d4}.shop-note{font-size:10px;color:#bda8d0;margin:6px 0 0}.shop-list{overflow-y:auto;overscroll-behavior:contain;padding:7px;scrollbar-color:#77509a #201431;scrollbar-width:thin}.upgrade{position:relative;display:grid;grid-template-columns:38px minmax(0,1fr) auto;gap:9px;align-items:center;width:100%;text-align:left;padding:9px;margin:4px 0;background:#2c1d43;border:2px solid #49315e;box-shadow:2px 2px #160d24;cursor:pointer;transition:background .12s,border-color .12s;touch-action:manipulation}.upgrade:hover:not(:disabled){background:#39244f;border-color:#9464b4}.upgrade:disabled{opacity:.54;cursor:not-allowed}.upgrade.affordable{border-color:#a077c4}.upgrade-icon{width:34px;height:34px;display:grid;place-items:center;background:#3a2753;border:2px solid #5a4077;font-size:17px}.upgrade-name{font-weight:bold;font-size:12px;display:block;color:#f5e9ff}.upgrade-desc{display:block;color:#baa6cc;font-size:10px;line-height:1.4;margin-top:3px}.upgrade-cost{color:#f5d69c;font-weight:bold;font-size:11px;text-align:right;white-space:nowrap}.upgrade-level{display:block;color:#bda5d5;font-size:9px;margin-top:4px}.prestige-card{margin:10px 7px 8px;padding:12px;background:linear-gradient(135deg,#3b2454,#2b1a40);border:2px solid #8154a0;box-shadow:3px 3px #130a1c}.prestige-row{display:flex;justify-content:space-between;gap:8px;align-items:center}.prestige-card h3{margin:0;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#f4d0ff}.spark-total{font-size:11px;color:#ffe8a6}.prestige-card p{font-size:10px;color:#cbb6dc;line-height:1.5;margin:7px 0}.prestige-btn{width:100%;border:2px solid #c06de4;background:#673b85;padding:9px;cursor:pointer;font-size:11px;font-weight:bold;box-shadow:3px 3px #1a0e29}.prestige-btn:disabled{filter:grayscale(.7);opacity:.55;cursor:not-allowed}.prestige-btn:not(:disabled):hover{background:#8c4db0}.footer{display:flex;justify-content:space-between;gap:12px;padding:10px 14px;color:#9e87b6;font-size:9px;border-top:1px solid #3d2b52}.toast{position:fixed;z-index:20;top:18px;left:50%;transform:translate(-50%,-20px);opacity:0;pointer-events:none;background:#482b62;border:2px solid #b477db;padding:10px 14px;box-shadow:4px 4px #130a1c;font-size:12px;transition:.2s}.toast.show{opacity:1;transform:translate(-50%,0)}.feature{opacity:0;transition:opacity .32s}.feature.on{opacity:1}.pixel-glow{filter:drop-shadow(0 0 4px #dc8aff)}
+.path-light{--ink:#fff5d1;--muted:#e4c88b;--line:#85682f;--violet:#ffd700;--pink:#fffacd;--gold:#fff0a1}
+body.path-light{background:radial-gradient(ellipse at 42% 18%,#705b2a 0,#39294c 38%,#21162e 78%)}
+body.path-light .scene-panel,body.path-light .shop-panel{border-color:#85682f}
+body.path-light .sky{background:radial-gradient(ellipse at 51% 58%,#ffd70033,transparent 48%),linear-gradient(180deg,#30223b,#40364a 65%,#211d2b)}
+.path-dark{--ink:#ffb3c6;--muted:#cb8b9b;--line:#6b1c42;--violet:#d90429;--pink:#ff4d6d;--gold:#ffb3c6}
+body.path-dark{background:radial-gradient(ellipse at 42% 18%,#3b0a2b 0,#1f0924 38%,#0d0216 78%)}
+body.path-dark .scene-panel,body.path-dark .shop-panel{border-color:#6b1c42}
+body.path-dark .sky{background:radial-gradient(ellipse at 51% 58%,#d9042933,transparent 48%),linear-gradient(180deg,#160719,#260b25 65%,#10051a)}
+.extras{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 7px 8px}
+.extra-card{min-width:0;padding:9px;background:#281a3b;border:1px solid #634783}
+.extra-card h3{margin:0 0 5px;color:#f4d0ff;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+.extra-card p{margin:0;color:#cbb6dc;font-size:10px;line-height:1.45}
+.quest-meter{height:5px;margin-top:7px;background:#160e22;border:1px solid #5b3e76;overflow:hidden}
+.quest-meter span{display:block;height:100%;width:0;background:linear-gradient(90deg,#9a62ec,#ff72d2);transition:width .2s}
+.relic-list{display:flex;flex-wrap:wrap;gap:4px;margin-top:5px}
+.relic-chip{padding:3px 5px;border:1px solid #755492;color:#ffe8a6;font-size:9px}
+.path-modal{position:fixed;inset:0;z-index:30;display:none;align-items:center;justify-content:center;padding:18px;background:#090510df}
+.path-modal.open{display:flex}
+.path-dialog{width:min(560px,100%);padding:22px;background:#24163d;border:3px solid #9a62ec;box-shadow:6px 6px #090510;text-align:center}
+.path-dialog h2{margin:0 0 8px;color:#f4d0ff;font-size:clamp(17px,4vw,25px)}
+.path-dialog p{margin:0 0 16px;color:#cbb6dc;font-size:12px;line-height:1.5}
+.path-options{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.path-choice{min-height:100px;padding:12px;border:2px solid #8664a0;background:#32204b;cursor:pointer;font-weight:bold}
+.path-choice:hover{filter:brightness(1.25)}
+.path-choice small{display:block;margin-top:7px;font-size:10px;line-height:1.4;font-weight:normal}
+.path-choice.light{border-color:#ffd700;color:#fff0a1}.path-choice.dark{border-color:#d90429;color:#ffb3c6}
+@media(max-width:700px){.extras{grid-template-columns:1fr 1fr;gap:6px;margin-bottom:6px}.extra-card{padding:7px}.extra-card h3{font-size:9px}.extra-card p{font-size:9px}}
+@media(max-width:380px){.extras{grid-template-columns:1fr}.extra-card p{font-size:10px}}
 @media(max-width:900px){.game-grid{grid-template-columns:minmax(0,1fr) minmax(290px,.78fr)}.scene-panel{min-height:540px}.shop-panel{max-height:660px}}
 @media(max-width:700px){.app{padding:10px 10px calc(18px + env(safe-area-inset-bottom))}.topbar{margin-bottom:10px}.brand-icon{width:36px;height:36px;font-size:20px}.brand p{font-size:9px}.tiny-btn{padding:7px 8px;font-size:10px}.stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-bottom:10px}.stat{padding:8px 10px;box-shadow:3px 3px #10091b}.stat-label{font-size:9px;margin-bottom:4px}.stat-value{font-size:19px}.stat-sub{font-size:9px}.game-grid{grid-template-columns:1fr;gap:10px}.scene-panel{height:min(63vh,510px);min-height:390px}.scene-head{padding:11px 12px 0}.sky{inset:43px 0 60px}.temple-svg{width:min(100%,580px);max-height:calc(100% - 3px)}.click-hint{bottom:12px;font-size:10px}.shop-panel{max-height:none;height:62vh;min-height:420px}.shop-list{flex:1;min-height:0}.prestige-card{margin-top:7px}.footer{font-size:8px;padding:8px 10px}}
 @media(max-width:380px){.brand h1{font-size:15px}.top-actions{gap:4px}.tiny-btn{font-size:9px;padding:6px}.upgrade{grid-template-columns:32px minmax(0,1fr) auto;padding:7px;gap:7px}.upgrade-icon{width:30px;height:30px;font-size:15px}.upgrade-desc{font-size:9px}}
@@ -9,7 +37,7 @@
 <header class="topbar"><div class="brand"><div class="brand-icon">✦</div><div><h1>Temple of the Violet Veil</h1><p>AN IDLE TEMPLE-BUILDING ODYSSEY</p></div></div><div class="top-actions"><button class="tiny-btn" id="soundBtn" aria-label="Toggle sound">♫ Sound: Off</button><button class="tiny-btn" id="resetBtn">Reset</button></div></header>
 <section class="stats" aria-label="Essence statistics"><div class="stat"><span class="stat-label">Essence</span><strong class="stat-value" id="essence">0</strong><span class="stat-sub" id="totalRun">0 earned this age</span></div><div class="stat"><span class="stat-label">Essence / click</span><strong class="stat-value" id="clickRate">1</strong><span class="stat-sub">Tap the temple to gather</span></div><div class="stat"><span class="stat-label">Essence / second</span><strong class="stat-value" id="eps">0</strong><span class="stat-sub">The temple gathers while away</span></div><div class="stat"><span class="stat-label">Divine Sparks</span><strong class="stat-value" id="sparkCount">0</strong><span class="stat-sub" id="multiplier">1.00× essence power</span></div></section>
 <main class="game-grid"><section class="scene-panel" id="scenePanel" aria-label="Clickable temple"><div class="scene-head"><span class="eyebrow">The sanctuary</span><span class="build-count" id="buildCount">Unawakened · 0 / 25</span></div><div class="sky"><div class="stars"></div><div class="moon"></div></div><div class="floor-glow"></div><button class="scene-click" id="templeClick" aria-label="Tap the temple to gather Essence"><svg class="temple-svg" viewBox="0 0 640 500" role="img" aria-label="Pixel art purple temple"><defs><linearGradient id="stone" x2="0" y2="1"><stop stop-color="#d6b6e4"/><stop offset="1" stop-color="#76528f"/></linearGradient><linearGradient id="roof" x2="0" y2="1"><stop stop-color="#b88bd1"/><stop offset="1" stop-color="#55346f"/></linearGradient><linearGradient id="door" x2="0" y2="1"><stop stop-color="#281438"/><stop offset="1" stop-color="#100a1a"/></linearGradient></defs><g shape-rendering="crispEdges"><!-- Tiny starter altar --><rect x="276" y="410" width="88" height="12" fill="#513762"/><rect x="284" y="398" width="72" height="12" fill="#aa83ba"/><rect x="292" y="356" width="56" height="42" fill="url(#stone)"/><rect x="286" y="348" width="68" height="10" fill="#e2c4eb"/><rect x="285" y="343" width="70" height="6" fill="#725187"/><path d="M294 343l29-27 29 27z" fill="url(#roof)"/><rect x="318" y="306" width="10" height="10" fill="#f2d3ff"/><rect x="316" y="371" width="16" height="27" fill="#29143a"/><rect x="301" y="366" width="5" height="8" fill="#8fe7ed"/><rect x="334" y="366" width="5" height="8" fill="#8fe7ed"/><rect x="276" y="422" width="88" height="5" fill="#281934"/></g><g id="features"></g></svg></button><div class="click-hint">✦ &nbsp; TAP THE SANCTUARY TO GATHER ESSENCE &nbsp; ✦</div></section>
-<aside class="shop-panel"><div class="shop-head"><div class="shop-title"><h2>Temple Upgrades</h2><span id="shopCount">0 / 25 awakened</span></div><p class="shop-note">Each relic enriches the sanctuary · costs rise with every level</p></div><div class="shop-list" id="shopList" aria-label="Upgrade shop"></div><section class="prestige-card"><div class="prestige-row"><h3>✧ Rebirth · Divine Sparks</h3><span class="spark-total" id="sparkBadge">0 sparks</span></div><p id="prestigeText">Earn 1,000,000 Essence this age to rebirth. Each spark permanently increases all Essence by 5%.</p><button class="prestige-btn" id="prestigeBtn" disabled>Rebirth · Need 1,000,000 Essence</button></section><div class="footer"><span>Saved automatically · offline Essence up to 8 hours</span><span id="saveStatus">All progress saved</span></div></aside></main></div><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<aside class="shop-panel"><div class="shop-head"><div class="shop-title"><h2>Temple Upgrades</h2><span id="shopCount">0 / 25 awakened</span></div><p class="shop-note">Each relic enriches the sanctuary · costs rise with every level</p></div><div class="shop-list" id="shopList" aria-label="Upgrade shop"></div><section class="extras" aria-label="Quests and relics"><div class="extra-card"><h3 id="questTitle">✧ Quest · 0 / 10 clicks</h3><p id="questText">Tap the sanctuary to begin your first quest.</p><div class="quest-meter"><span id="questMeter"></span></div></div><div class="extra-card"><h3>Relics · <span id="relicCount">0 / 5</span></h3><p id="relicText">No relics discovered yet.</p><div class="relic-list" id="relicList"></div></div></section><section class="prestige-card"><div class="prestige-row"><h3>✧ Rebirth · Divine Sparks</h3><span class="spark-total" id="sparkBadge">0 sparks</span></div><p id="prestigeText">Earn 1,000,000 Essence this age to rebirth. Each spark permanently increases all Essence by 5%.</p><button class="prestige-btn" id="prestigeBtn" disabled>Rebirth · Need 1,000,000 Essence</button></section><div class="footer"><span>Saved automatically · offline Essence up to 8 hours</span><span id="saveStatus">All progress saved</span></div></aside></main></div><div class="path-modal" id="pathModal" role="dialog" aria-modal="true" aria-labelledby="pathTitle"><div class="path-dialog"><h2 id="pathTitle">The cathedral calls for a path</h2><p>Choose your sanctuary's destiny. This choice is permanent for this age.</p><div class="path-options"><button class="path-choice light" data-path="light">☼ Path of Light<small>+50% Essence per click</small></button><button class="path-choice dark" data-path="dark">☾ Path of Shadow<small>+100% passive Essence</small></button></div></div></div><div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script>
 'use strict';
 // 25 relics reveal architectural layers in order; every relic remains upgradeable.
@@ -43,7 +71,15 @@ const upgrades=[
 
 // Save a compact JSON state so it remains portable and easy to reset.
 const SAVE_KEY='violet-veil-save-v1', PRESTIGE_THRESHOLD=1_000_000, OFFLINE_CAP=8*60*60*1000;
-const initialState=()=>({essence:0,runEarned:0,totalEarned:0,sparks:0,levels:upgrades.map(()=>0),lastSaved:Date.now(),sound:false});
+const QUEST_GOALS=[10,25,50,100,250,500,1000];
+const RELICS=[
+ {name:'Lantern of Dawn',icon:'☼',effect:'10% stronger clicks'},
+ {name:'Veilwoven Bell',icon:'♬',effect:'10% more passive Essence'},
+ {name:'Pilgrim’s Star',icon:'✦',effect:'5% more Essence from all sources'},
+ {name:'Moonwell Chalice',icon:'♜',effect:'15% stronger clicks'},
+ {name:'Eclipse Crown',icon:'♛',effect:'15% more passive Essence'}
+];
+const initialState=()=>({essence:0,runEarned:0,totalEarned:0,sparks:0,levels:upgrades.map(()=>0),lastSaved:Date.now(),sound:false,path:null,clicks:0,quest:0,questProgress:0,relics:[]});
 let state=initialState(),saveTimer=0,toastTimer=0,audioContext=null;
 const $=id=>document.getElementById(id);
 const numberFormat=value=>{
@@ -56,9 +92,11 @@ const numberFormat=value=>{
  const scaled=abs/Math.pow(1000,tier);
  return `${value<0?'-':''}${scaled.toFixed(scaled<10?1:0).replace(/\.0$/,'')}${units[tier-1]}`;
 };
-const multiplier=()=>1+state.sparks*.05;
-const clickPower=()=>multiplier()*(1+upgrades.reduce((sum,u,i)=>sum+(u.kind==='click'?u.power*state.levels[i]:0),0));
-const essencePerSecond=()=>multiplier()*upgrades.reduce((sum,u,i)=>sum+(u.kind==='eps'?u.power*state.levels[i]:0),0);
+const relicBonus=(index)=>state.relics.includes(index)?1:0;
+const globalMultiplier=()=>multiplier()*(1+relicBonus(2)*.05);
+const clickPower=()=>globalMultiplier()*(1+(state.path==='light' ? .5 : 0)+relicBonus(0)*.1+relicBonus(3)*.15+upgrades.reduce((sum,u,i)=>sum+(u.kind==='click'?u.power*state.levels[i]:0),0));
+const essencePerSecond=()=>globalMultiplier()*(1+(state.path==='dark'?1:0)+relicBonus(1)*.1+relicBonus(4)*.15)*upgrades.reduce((sum,u,i)=>sum+(u.kind==='eps'?u.power*state.levels[i]:0),0);
+const questGoal=()=>QUEST_GOALS[Math.min(state.quest,QUEST_GOALS.length-1)];
 const upgradeCost=i=>Math.ceil(upgrades[i].base*Math.pow(1.2,state.levels[i]));
 function showToast(message){const el=$('toast');el.textContent=message;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),2100)}
 function saveGame(){
@@ -73,6 +111,10 @@ function loadGame(){
   state={...initialState(),...saved};
   state.levels=upgrades.map((_,i)=>Math.max(0,Math.floor(Number(saved.levels[i])||0)));
   for(const key of ['essence','runEarned','totalEarned','sparks'])state[key]=Math.max(0,Number(saved[key])||0);
+   for(const key of ['clicks','quest','questProgress'])state[key]=Math.max(0,Math.floor(Number(saved[key])||0));
+   state.path=['light','dark'].includes(saved.path)?saved.path:null;
+   state.questProgress=Math.min(state.questProgress,questGoal());
+   state.relics=Array.isArray(saved.relics)?[...new Set(saved.relics.map(Number).filter(i=>Number.isInteger(i)&&i>=0&&i<RELICS.length))]:[];
   state.sound=Boolean(saved.sound);
   const elapsed=Math.max(0,Math.min(OFFLINE_CAP,Date.now()-(Number(saved.lastSaved)||Date.now())));
   const away=essencePerSecond()*elapsed/1000;
@@ -96,7 +138,15 @@ function render(){
  $('prestigeText').textContent=state.runEarned>=PRESTIGE_THRESHOLD?`Rebirth now for ${numberFormat(possible)} Divine ${possible===1?'Spark':'Sparks'}. Your permanent multiplier will become ${(multiplier()+possible*.05).toFixed(2)}×.`:`Earn ${numberFormat(PRESTIGE_THRESHOLD)} Essence this age to rebirth. Each spark permanently increases all Essence by 5%. Current age: ${numberFormat(state.runEarned)} / ${numberFormat(PRESTIGE_THRESHOLD)}.`;
  const prestige=$('prestigeBtn');prestige.disabled=possible<1;prestige.textContent=possible?`Rebirth · Gain ${numberFormat(possible)} ${possible===1?'Spark':'Sparks'}`:`Rebirth · Need ${numberFormat(PRESTIGE_THRESHOLD)} Essence`;
  $('soundBtn').textContent=`♫ Sound: ${state.sound?'On':'Off'}`;
- $('features').innerHTML=upgrades.map((u,i)=>state.levels[i]>0?`<g class="feature on" opacity="${Math.min(1,.72+Math.log2(state.levels[i]+1)*.08)}">${u.visual}</g>`:'').join('');
+ const goal=questGoal();$('questTitle').textContent=`✧ Quest ${state.quest+1} · ${state.questProgress} / ${goal} clicks`;
+  $('questText').textContent=state.relics.length<RELICS.length?`Click the sanctuary ${goal-state.questProgress} more times. Completion grants Essence and a relic.`:`Click the sanctuary ${goal-state.questProgress} more times for an Essence reward.`;
+  $('questMeter').style.width=`${Math.min(100,state.questProgress/goal*100)}%`;
+  $('relicCount').textContent=`${state.relics.length} / ${RELICS.length}`;
+  $('relicText').textContent=state.relics.length?state.relics.map(i=>`${RELICS[i].icon} ${RELICS[i].name}: ${RELICS[i].effect}`).join(' · '):'Complete click quests to discover relics.';
+  $('relicList').innerHTML=state.relics.map(i=>`<span class="relic-chip" title="${RELICS[i].effect}">${RELICS[i].icon} ${RELICS[i].name}</span>`).join('');
+  document.body.classList.toggle('path-light',state.path==='light');document.body.classList.toggle('path-dark',state.path==='dark');
+  $('pathModal').classList.toggle('open',state.path===null&&state.levels.reduce((sum,level)=>sum+level,0)>=10);
+  $('features').innerHTML=upgrades.map((u,i)=>state.levels[i]>0?`<g class="feature on" opacity="${Math.min(1,.72+Math.log2(state.levels[i]+1)*.08)}">${u.visual}</g>`:'').join('');
  renderShop();
 }
 function addEssence(amount){if(!(amount>0)||!Number.isFinite(amount))return;state.essence+=amount;state.runEarned+=amount;state.totalEarned+=amount}
@@ -104,8 +154,15 @@ function playChime(isUpgrade=false){
  if(!state.sound)return;
  try{audioContext??=new(window.AudioContext||window.webkitAudioContext)();if(audioContext.state==='suspended')audioContext.resume();const osc=audioContext.createOscillator(),gain=audioContext.createGain();osc.type='triangle';osc.frequency.value=isUpgrade?660:440;gain.gain.setValueAtTime(.035,audioContext.currentTime);gain.gain.exponentialRampToValueAtTime(.001,audioContext.currentTime+.12);osc.connect(gain);gain.connect(audioContext.destination);osc.start();osc.stop(audioContext.currentTime+.13)}catch(error){console.warn('Audio is unavailable.',error)}
 }
+function completeQuest(){
+ const goal=questGoal(),reward=goal*25*globalMultiplier();addEssence(reward);
+ let found=null;
+ if(state.relics.length<RELICS.length){found=state.relics.length;state.relics.push(found)}
+ state.quest++;state.questProgress=0;
+ showToast(found===null?`Quest complete · +${numberFormat(reward)} Essence`:`Relic discovered: ${RELICS[found].name}!`);
+}
 function clickTemple(event){
- const amount=clickPower();addEssence(amount);render();
+ const amount=clickPower();addEssence(amount);state.clicks++;state.questProgress++;if(state.questProgress>=questGoal())completeQuest();render();
  const rect=$('templeClick').getBoundingClientRect(),el=document.createElement('span');el.className='float-text';el.textContent=`+${numberFormat(amount)} ✦`;
  el.style.left=`${Math.max(8,Math.min(rect.width-100,(event.clientX||rect.left+rect.width/2)-rect.left))}px`;el.style.top=`${Math.max(54,(event.clientY||rect.top+rect.height/2)-rect.top)}px`;$('templeClick').appendChild(el);setTimeout(()=>el.remove(),850);playChime();
 }
@@ -113,11 +170,12 @@ function buyUpgrade(index){const item=upgrades[index];if(!item)return;const cost
 function rebirth(){
  const gained=Math.floor(state.runEarned/PRESTIGE_THRESHOLD);if(gained<1)return;
  if(!confirm(`Rebirth this age for ${gained} Divine ${gained===1?'Spark':'Sparks'}? Essence and all upgrades will reset; sparks are permanent.`))return;
- state.sparks+=gained;state.essence=0;state.runEarned=0;state.levels=upgrades.map(()=>0);state.lastSaved=Date.now();saveGame();render();$('shopList').scrollTop=0;showToast(`A new age dawns · +${gained} Divine ${gained===1?'Spark':'Sparks'}`);
+ state.sparks+=gained;state.essence=0;state.runEarned=0;state.levels=upgrades.map(()=>0);state.path=null;state.clicks=0;state.quest=0;state.questProgress=0;state.relics=[];state.lastSaved=Date.now();saveGame();render();$('shopList').scrollTop=0;showToast(`A new age dawns · +${gained} Divine ${gained===1?'Spark':'Sparks'}`);
 }
 function resetGame(){if(!confirm('Erase all progress, including Divine Sparks, and begin again?'))return;state=initialState();saveGame();render();$('shopList').scrollTop=0;showToast('The sanctuary returns to its first stone.')}
 $('templeClick').addEventListener('click',clickTemple);
 $('shopList').addEventListener('click',event=>{const button=event.target.closest('[data-upgrade]');if(button)buyUpgrade(Number(button.dataset.upgrade))});
+ $('pathModal').addEventListener('click',event=>{const button=event.target.closest('[data-path]');if(!button)return;state.path=button.dataset.path;render();saveGame();showToast(`The ${state.path==='light'?'Path of Light':'Path of Shadow'} is chosen.`)});
 $('prestigeBtn').addEventListener('click',rebirth);$('resetBtn').addEventListener('click',resetGame);
 $('soundBtn').addEventListener('click',()=>{state.sound=!state.sound;render();saveGame();playChime(true)});
 window.addEventListener('beforeunload',saveGame);document.addEventListener('visibilitychange',()=>{if(document.hidden)saveGame()});
